@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import relaxoraTitle from "../assets/Relaxora-title.png";
-import relaxoraTitleWhite from "../assets/rx-title-white.png";
+import logo from "../assets/SaviLogo.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import useBreakpoint from "../Hooks/breakpoint";
 let Header = ({ parentfn }) => {
@@ -60,7 +59,7 @@ let Header = ({ parentfn }) => {
       className={`w-full py-2 text-gray-400 box header ${
         color === "text-white" && pathname === "/" && !isMobile
           ? "header-glass"
-          : "bg-white"
+          : "bg-black"
       }`}
     >
       <div className=" h-14 w-full">
@@ -70,36 +69,11 @@ let Header = ({ parentfn }) => {
             to="/"
           >
             <img
-              src={
-                color === "text-white" && pathname === "/" && !isMobile
-                  ? relaxoraTitleWhite
-                  : relaxoraTitle
-              }
+              src={logo}
               alt="Relaxora-title"
-              className={`object-contain flex shrink-0  w-24 h-8 ${
-                color === "text-white" && pathname === "/" && !isMobile
-                  ? "scale-[2.6]"
-                  : ""
-              } `}
+              className="w-52"
             />
-            <span
-              className={` ${
-                color === "text-white" && pathname === "/" && !isMobile
-                  ? "text-white"
-                  : "text-black"
-              } text-2xl font-light  hidden sm:block `}
-            >
-              |
-            </span>
-            <h2
-              className={` text-md font-light text-black items-center hidden sm:block ${
-                color === "text-white" && pathname === "/" && !isMobile
-                  ? "text-white"
-                  : "text-black"
-              }`}
-            >
-              Elevate comfort, Relax in Aura
-            </h2>
+            
           </NavLink>
           <div className="hidden  py-2 xl:flex">
             <div className="flex items-center justify-center w-full">
@@ -113,7 +87,7 @@ let Header = ({ parentfn }) => {
                       } ${
                         color === "text-white" && pathname === "/"
                           ? "!text-white"
-                          : "!text-black"
+                          : "!text-white"
                       }`
                     }
                     to="/"
@@ -133,7 +107,7 @@ let Header = ({ parentfn }) => {
                   className={`relative hover:!text-red-500 cursor-pointer tracking-wider ${
                     pathname.split("/")[1] === "services" ? "text-red-500" : ""
                   }  ${pathname === "/" ? color : ""}  ${
-                    pathname !== "/" ? "text-black" : ""
+                    pathname !== "/" ? "text-white" : "text-white"
                   }  `}
                 >
                   Services
@@ -238,7 +212,7 @@ let Header = ({ parentfn }) => {
                       } ${
                         color === "text-white" && pathname === "/"
                           ? "!text-white"
-                          : "!text-black"
+                          : "!text-white"
                       }`
                     }
                     to="/support"
@@ -254,7 +228,7 @@ let Header = ({ parentfn }) => {
                       } ${
                         color === "text-white" && pathname === "/"
                           ? "!text-white"
-                          : "!text-black"
+                          : "!text-white"
                       }`
                     }
                     to="/aboutUs"
@@ -270,7 +244,7 @@ let Header = ({ parentfn }) => {
                       } ${
                         color === "text-white" && pathname === "/"
                           ? "!text-white"
-                          : "!text-black"
+                          : "!text-white"
                       }`
                     }
                     to="/contact"
@@ -375,7 +349,7 @@ let Header = ({ parentfn }) => {
                   }));
                 }}
                 className={` relative ${
-                  pathname === "/services" ? "!text-red-500" : "text-black"
+                  pathname === "/services" ? "!text-red-500" : "text-white"
                 } hover:!text-red-500 cursor-pointer  `}
               >
                 Services

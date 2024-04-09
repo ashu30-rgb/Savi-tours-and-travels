@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     <Header parentfn={getFromChild}/>
-    <div className={`${mobilePadding ? "pt-14" : ""} w-full ${
+    <div className={` ${mobilePadding ? "pt-14" : ""} pb-24  min-h-screen w-full ${
             path !== "/" ? "savi-page-body" : ""
           } `}>
     <RouteContent/>

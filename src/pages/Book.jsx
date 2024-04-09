@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
 function Book() {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://tally.so/widgets/embed.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+        document.head.removeChild(script);
+    };
+}, []);
+
   return (
-    <div className='min-h-screen flex justify-center items-center text-9xl'>BookNow</div>
-  )
+    <>
+      <iframe className='py-24' data-tally-src="https://tally.so/r/nP6Q71?transparentBackground=1" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="BOOK NOW !!"></iframe> 
+
+    </>
+)
 }
 
 export default Book
