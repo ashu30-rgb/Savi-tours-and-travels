@@ -231,25 +231,9 @@ let Header = ({ parentfn }) => {
                           : "!text-white"
                       }`
                     }
-                    to="/aboutUs"
+                    to="/termsnconditions"
                   >
-                    About Us
-                  </NavLink>
-                </li>
-                <li className="">
-                  <NavLink
-                    className={({ isActive }) =>
-                      ` cursor-pointer hover:!text-red-500 tracking-wider ${
-                        isActive ? "!text-red-500" : ""
-                      } ${
-                        color === "text-white" && pathname === "/"
-                          ? "!text-white"
-                          : "!text-white"
-                      }`
-                    }
-                    to="/contact"
-                  >
-                    Contact
+                    Terms & Conditions
                   </NavLink>
                 </li>
                 <li className="">
@@ -421,21 +405,9 @@ let Header = ({ parentfn }) => {
                       isActive ? "!text-red-500" : "!text-black"
                     }`
                   }
-                  to="/aboutUs"
+                  to="/termsnconditions"
                 >
-                  About Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    ` cursor-pointer hover:!text-red-500 ${
-                      isActive ? "!text-red-500" : "!text-black"
-                    }`
-                  }
-                  to="/contact"
-                >
-                  Contact
+                  Terms & Conditions
                 </NavLink>
               </li>
               <li className="">

@@ -75,13 +75,13 @@ function Home() {
             <div className="mt-4">
               <h3 className="text-gray-200 text-xs tracking-widest title-font mb-1">{AllVehicles[item]?.category.split(",")[0]}</h3>
               <h2 className="text-white title-font text-lg font-medium">{AllVehicles[item]?.name}</h2>
-              <p className="mt-1"><b>&#8377;{AllVehicles[item]?.price}</b> / 24hrs.</p>
+              <p className="mt-1"><b>&#8377;{AllVehicles[item]?.price[0]}</b> / hrs.</p>
             </div>
           </div>
           )})}
           <div className={`lg:w-1/4 md:w-1/2 p-4 w-full relative  !z-10`}>
             <div className="absolute w-full h-full top-0 left-0 flex justify-center items-center !z-50">
-              <Link to="/services/all" className="font-semibold text-2xl text-white">View More....</Link>
+              <Link to="/services/all" className="font-semibold text-2xl text-white hover:text-red-500">View More....</Link>
             </div>
             <a className="block relative h-48 rounded overflow-hidden opacity-40">
               <img alt={AllVehicles[randomArray[3]]?.name} className="object-cover object-center w-full h-full block transition-all duration-700"  src={AllVehicles[randomArray[3]]?.imageUrl}/>
@@ -89,7 +89,7 @@ function Home() {
             <div className="mt-4 opacity-40">
               <h3 className="text-gray-200 text-xs tracking-widest title-font mb-1">{AllVehicles[randomArray[3]]?.category.split(",")[0]}</h3>
               <h2 className="text-white title-font text-lg font-medium">{AllVehicles[randomArray[3]]?.name}</h2>
-              <p className="mt-1"><b>&#8377;{AllVehicles[randomArray[3]]?.price}</b> / 24hrs.</p>
+              <p className="mt-1"><b>&#8377;{AllVehicles[randomArray[3]]?.price[0]}</b> / hrs.</p>
             </div>
           </div>
           
