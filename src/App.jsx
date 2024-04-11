@@ -12,7 +12,6 @@ function App() {
   const [mobilePadding, setMobilePadding] = useState(false);
   const path = location.pathname;
   const getFromChild = (data) => {
-    console.log(data);
     setMobilePadding(data);
   };
   

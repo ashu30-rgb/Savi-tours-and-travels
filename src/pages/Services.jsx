@@ -17,7 +17,7 @@ function Services() {
             behavior: 'smooth' // Smooth scrolling behavior
           });
     },[])
-    
+
     return (
     <>
         <div className='container text-center py-6 mx-auto'>
@@ -39,7 +39,7 @@ function Services() {
                 <div className="container px-5 py-12 pb-24 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         {AllVehicles.filter((vehicle)=>vehicle.category.includes(vehicleType)).sort((a, b) => b.price[0] - a.price[0]).map((item)=>{return(
-                           <ServiceCard item={item}/>
+                           <ServiceCard key={item.id} item={item}/>
                         )})}
                     </div>
                 </div>

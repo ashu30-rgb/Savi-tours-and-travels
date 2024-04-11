@@ -67,8 +67,8 @@ function Home() {
           OUR FLEET
         </div>
         <div className="flex flex-wrap -m-4">
-          {randomArray.slice(0,3).map((item)=>{return(
-          <div className={`lg:w-1/4 md:w-1/2 p-4 w-full relative `}>
+          {randomArray.slice(0,3).map((item, index)=>{return(
+          <div key={index} className={`lg:w-1/4 md:w-1/2 p-4 w-full relative `}>
             <a className="block relative h-48 rounded overflow-hidden">
               <img alt={AllVehicles[item]?.name} className="object-cover object-center w-full h-full block transition-all duration-700" style={{ transition: 'opacity 0.7s ease-in-out' }} src={AllVehicles[item]?.imageUrl}/>
             </a>
