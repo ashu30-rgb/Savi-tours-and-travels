@@ -95,6 +95,10 @@ function VehicleDetails() {
       </div>
     </div>
   </div>
+  {duration[0]==="5"&&
+  <div className="text-center pt-8">
+        *Price and availability may vary for monthly rentals based on the season and availability of the vehicle.
+    </div>}
 </section>
   )
 }
