@@ -10,6 +10,14 @@ function Services() {
     useEffect(()=>{
         setVehicleType(type)
     },[type])
+
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scrolling behavior
+          });
+    },[])
+    
     return (
     <>
         <div className='container text-center py-6 mx-auto'>
