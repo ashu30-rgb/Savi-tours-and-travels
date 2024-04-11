@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Book from './pages/Book';
 import VehicleDetails from './pages/VehicleDetails';
+import Terms from './pages/Terms';
 
 function RouteContent() {
   return (
@@ -18,6 +19,7 @@ function RouteContent() {
         <Route path='/contact' element = {<Contact/>}/>
         <Route path='/bookNow' element = {<Book/>}/>
         <Route path='/vehicleDetails' element = {<VehicleDetails/>}/>
+        <Route path='/termsnconditions' element = {<Terms/>}/>
     </Routes>
   )
 }
