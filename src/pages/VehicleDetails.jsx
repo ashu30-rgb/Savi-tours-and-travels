@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom'
 
 function VehicleDetails() {
+  const [duration, setDuration] = useState(["3", "24 Hrs"])
     const location = useLocation();
     const data = location.state?.item
 
@@ -54,10 +56,37 @@ function VehicleDetails() {
                 <li className=' list-disc'>{item}</li>
             )})}
         </ul>
+        <div className='flex items-center justify-end'>
+                    <span className="mr-3 font-semibold">Select Duration:</span>
+                    <div className="relative">
+                      <select
+                        value={duration[0]}
+                       onChange={(e)=> {setDuration([e.target.value,e.target.options[e.target.selectedIndex].textContent])}}
+                        className="rounded-md border-[1.5px] appearance-none py-1  text-base pl-3 pr-10 form-control"
+                      >
+                        <option value="0">Hourly</option>
+                        <option value="1">6 Hrs</option>
+                        <option value="2">12 Hrs</option>
+                        <option value="3">24 Hrs</option>
+                        <option value="4">3 Days</option>
+                        <option value="5">Month</option>
+                      </select>
+                      <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          className="w-4 h-4"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M6 9l6 6 6-6"></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
         <div className="flex items-center pb-5 border-b-2 border-gray-100 mb-4">
         </div>
         <div className="flex">
-          <span className="title-font font-medium text-2xl text-gray-900"><b>&#8377;{data.price}</b> / 24hrs.</span>
+          <span className="title-font font-medium text-2xl text-gray-900"><b>&#8377;{data.price[duration[0]]}</b> / {duration[1]}</span>
           <div className='ml-auto flex gap-2 font-semibold'>
             <Link to={`/services/${data.category.split(",")[0]}`} className="flex text-black bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded">Go Back</Link>
             <button className="flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Book Now</button>

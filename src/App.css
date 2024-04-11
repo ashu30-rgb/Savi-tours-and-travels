@@ -123,10 +123,24 @@ iframe {
   font-weight: bold !important;
 }
 
-/* footer{
-  position: absolute;
-  bottom: 0;
-  z-index: 99999;
-  width: 100%;
-  background-color: white;
-} */
+textarea.form-control {
+  min-height: calc(1.5em + 0.75rem + 2px);
+  height: auto;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #f7f9fb;
+  opacity: 1;
+  box-shadow: none;
+  border: 0.1rem solid #e3e5ef;
+}
+
+.form-control:focus {
+  border-color: rgb(239 68 68) !important;
+  box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.115) !important;
+  background-color: #fff;
+  color: #061237;
+  outline: 0;
+  transition: 0.2s;
+}

@@ -125,7 +125,7 @@ const AllVehicles = [
         name:"Mahindra Thar",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/40087/thar-exterior-right-front-three-quarter-32.jpeg?q=80",
-        price: "4100"
+        price: ["300", "1,500", "2,500", "4,100", "12,000", "90,000"]
     },
     {
         id:17,
