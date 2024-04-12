@@ -3,9 +3,8 @@ import './App.css'
 import Footer from './components/footer'
 import Header from './components/header'
 import RouteContent from './Route'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation } from "react-router-dom";
-
 
 function App() {
   const location = useLocation();
@@ -15,6 +14,7 @@ function App() {
     setMobilePadding(data);
   };
   
+
 
   return (
     <>

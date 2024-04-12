@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import aos from 'aos';
+import 'aos/dist/aos.css';
 
 function ServiceCard({item}) {
+    useEffect(()=>{
+        aos.init({
+            once: true
+          })
+    },[])
   return (
-        <div className="p-4 md:w-1/3">
+        <div className="p-4 md:w-1/3" data-aos="fade-up">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={item.imageUrl} alt="blog"/>
                 <div className="p-6">

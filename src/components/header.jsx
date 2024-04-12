@@ -86,8 +86,8 @@ let Header = ({ parentfn }) => {
                         isActive ? "!text-red-500" : ""
                       } ${
                         color === "text-white" && pathname === "/"
-                          ? "!text-white"
-                          : "!text-white"
+                          ? "text-white"
+                          : "text-white"
                       }`
                     }
                     to="/"
@@ -105,7 +105,7 @@ let Header = ({ parentfn }) => {
                     }));
                   }}
                   className={`relative hover:!text-red-500 cursor-pointer tracking-wider ${
-                    pathname.split("/")[1] === "services" ? "text-red-500" : ""
+                    pathname.split("/")[1] === "services" ? "!text-red-500" : ""
                   }  ${pathname === "/" ? color : ""}  ${
                     pathname !== "/" ? "text-white" : "text-white"
                   }  `}
@@ -211,8 +211,8 @@ let Header = ({ parentfn }) => {
                         isActive ? "!text-red-500" : ""
                       } ${
                         color === "text-white" && pathname === "/"
-                          ? "!text-white"
-                          : "!text-white"
+                          ? "text-white"
+                          : "text-white"
                       }`
                     }
                     to="/support"
@@ -227,8 +227,8 @@ let Header = ({ parentfn }) => {
                         isActive ? "!text-red-500" : ""
                       } ${
                         color === "text-white" && pathname === "/"
-                          ? "!text-white"
-                          : "!text-white"
+                          ? "text-white"
+                          : "text-white"
                       }`
                     }
                     to="/termsnconditions"
@@ -242,7 +242,7 @@ let Header = ({ parentfn }) => {
                       color === "text-white" && pathname === "/"
                         ? "bg-red-500 text-black hover:bg-white/80"
                         : "bg-red-500 text-white hover:bg-black/60"
-                    }uppercase px-5 py-3  rounded-lg`}
+                    }uppercase px-5 py-2.5  rounded-lg`}
                   >
                     <Link
                       className={` ${

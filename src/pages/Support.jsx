@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SupportCard from "../components/SupportCard";
 import car from "../assets/car-svgrepo-com.svg";
 import help from "../assets/help-svgrepo-com.svg";
@@ -6,16 +6,24 @@ import contact from "../assets/contact-headset-communication-svgrepo-com.svg";
 import payment from "../assets/payment.svg";
 import location from "../assets/location.svg";
 import discount from "../assets/discount.svg";
+import aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Support() {
+
+  useEffect(()=>{
+    aos.init({
+      once: true
+    })
+  },[])
   return (
     <>
       <div className="bg-gray-900 min-h-screen w-full">
         <div className="text-center text-white py-12 lg:py-24">
-          <p className="uppercase text-md md:text-xl tracking-widest font-light mb-4">
+          <p className="uppercase text-md md:text-xl tracking-widest font-light mb-4" data-aos="fade-up">
             Welcome to Xplore Wheels support
           </p>
-          <h1 className=" text-4xl md:text-7xl font-bold">How Can We Help?</h1>
+          <h1 className=" text-4xl md:text-7xl font-bold" data-aos="fade-down">How Can We Help?</h1>
         </div>
         <div className="grid grid-col md:grid-cols-2 lg:grid-cols-3 container mx-auto w-full gap-4 lg:gap-8 px-4">
           <SupportCard image={help} text="Booking Assistance" hid="#1"/>
@@ -26,7 +34,7 @@ function Support() {
           <SupportCard image={contact} text="Contact Us" hid="#6"/>
         </div>
         <div className="container mx-auto p-6 py-24 text-white">
-          <div className="py-8">
+          <div data-aos="fade-right" className="py-8">
             <h1 id="1" className="text-2xl lg:text-4xl mb-4 font-semibold">
               Need help with booking a vehicle from our diverse fleet?
             </h1>
@@ -39,7 +47,7 @@ function Support() {
               way.
             </p>
           </div>
-          <div className="py-8">
+          <div data-aos="fade-right" className="py-8">
             <h1 id="2" className="text-2xl lg:text-4xl mb-4 font-semibold">
               What payment modes do we accept, and when do we accept payments?
             </h1>
@@ -52,7 +60,7 @@ function Support() {
               delivery, ensuring a hassle-free experience for you.
             </p>
           </div>
-          <div className="py-8">
+          <div data-aos="fade-right" className="py-8">
             <h1 id="3" className="text-2xl lg:text-4xl mb-4 font-semibold">
               How can LPU students avail of exclusive discounts?
             </h1>
@@ -65,7 +73,7 @@ function Support() {
               affordable.
             </p>
           </div>
-          <div className="py-8">
+          <div data-aos="fade-right" className="py-8">
             <h1 id="4" className="text-2xl lg:text-4xl mb-4 font-semibold">
               What are the specifications of our vehicles, including safety
               measures?
@@ -79,7 +87,7 @@ function Support() {
               enjoy a smooth and secure ride every time you choose our services.
             </p>
           </div>
-          <div className="py-8">
+          <div data-aos="fade-right" className="py-8">
             <h1 id="5" className="text-2xl lg:text-4xl mb-4 font-semibold">
               Where are we located, and how can you find us?
             </h1>
@@ -92,7 +100,7 @@ function Support() {
               you soon!
             </p>
           </div>
-          <div className="py-8">
+          <div data-aos="fade-right" className="py-8">
             <h1 id="6" className="text-2xl lg:text-4xl mb-4 font-semibold">
               How can you reach out to us for further assistance?
             </h1>

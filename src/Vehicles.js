@@ -3,7 +3,7 @@ const AllVehicles = [
         id:1,
         category:"bike, all",
         name:"Yamaha r15",
-        description:"This is yamaha r15 bike very good bike this is",
+        description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://imgd.aeplcdn.com/664x374/n/cw/ec/103795/yzf-r15-right-front-three-quarter-12.jpeg?isig=0&q=80",
         price: ["199", "799", "999", "1499", "35000"]
     },
