@@ -8,7 +8,7 @@ function ServiceCard({item}) {
                 <div className="p-6">
                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{item.category.split(",")[0]}</h2>
                     <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{item.name}</h1>
-                    <p className="leading-relaxed mb-3"><b>&#8377;{item.price[0]}</b> / hour</p>
+                    <p className="leading-relaxed mb-3"><b>&#8377;{item.price[3]}</b> / 24hrs.</p>
                     <div className="flex items-center flex-wrap ">
                     <Link to="/vehicleDetails" state={{item}} className='bg-red-500 rounded w-full p-2 text-white uppercase text-center'>Book now</Link>
                     </div>

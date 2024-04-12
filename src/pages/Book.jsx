@@ -16,7 +16,6 @@ function Book() {
   return (
     <>
       <iframe className='pt-16 bg-gray-900' data-tally-src="https://tally.so/r/mBXy1e" width="100%" height="100%" title="BOOK NOW !!"></iframe> 
-
     </>
 )
 }

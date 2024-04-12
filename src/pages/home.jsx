@@ -75,7 +75,7 @@ function Home() {
             <div className="mt-4">
               <h3 className="text-gray-200 text-xs tracking-widest title-font mb-1">{AllVehicles[item]?.category.split(",")[0]}</h3>
               <h2 className="text-white title-font text-lg font-medium">{AllVehicles[item]?.name}</h2>
-              <p className="mt-1"><b>&#8377;{AllVehicles[item]?.price[0]}</b> / hrs.</p>
+              <p className="mt-1"><b>&#8377;{AllVehicles[item]?.price[3]}</b> / 24hrs.</p>
             </div>
           </div>
           )})}
@@ -89,7 +89,7 @@ function Home() {
             <div className="mt-4 opacity-40">
               <h3 className="text-gray-200 text-xs tracking-widest title-font mb-1">{AllVehicles[randomArray[3]]?.category.split(",")[0]}</h3>
               <h2 className="text-white title-font text-lg font-medium">{AllVehicles[randomArray[3]]?.name}</h2>
-              <p className="mt-1"><b>&#8377;{AllVehicles[randomArray[3]]?.price[0]}</b> / hrs.</p>
+              <p className="mt-1"><b>&#8377;{AllVehicles[randomArray[3]]?.price[3]}</b> / 24hrs.</p>
             </div>
           </div>
           

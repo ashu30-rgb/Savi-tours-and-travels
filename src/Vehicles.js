@@ -5,7 +5,7 @@ const AllVehicles = [
         name:"Yamaha r15",
         description:"This is yamaha r15 bike very good bike this is",
         imageUrl:"https://shop.yamaha-motor-india.com/cdn/shop/files/Racing-Blue_761x.webp?v=1704789964",
-        price: "xx"
+        price: ["199", "799", "999", "1499", "35000"]
     },
     {
         id:2,
@@ -13,7 +13,8 @@ const AllVehicles = [
         name:"Maruti Suzuki Baleno",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://static.autox.com/uploads/2022/03/2022-Maruti-Suzuki-Baleno-design1.jpg",
-        price: "2500"
+        price: ["250", "999", "1499", "2399", "N/A"]
+
     },
     {
         id:3,
@@ -21,7 +22,7 @@ const AllVehicles = [
         name:"Tata Altroz",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/32597/altroz-exterior-left-front-three-quarter.jpeg?q=80",
-        price: "2500"
+        price: ["250", "899", "1499", "2399", "N/A"]
     },
     {
         id:4,
@@ -29,7 +30,7 @@ const AllVehicles = [
         name:"Maruti Suzuki Swift Dzire",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift-Dzire/10243/1686044076724/front-left-side-47.jpg?impolicy=resize&imwidth=420",
-        price: "2500"
+        price: ["250", "899", "1599", "2499", "N/A"]
     },
     {
         id:5,
@@ -37,7 +38,7 @@ const AllVehicles = [
         name:"Toyota Glanza",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://imgd.aeplcdn.com/370x208/n/cw/ec/112839/glanza-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
-        price: "2500"
+        price: ["250", "899", "1599", "2499", "N/A"]
     },
     {
         id:6,
@@ -45,7 +46,7 @@ const AllVehicles = [
         name:"Tata Nexon",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20220923031831_Nexon.jpg&w=700&q=90&c=1",
-        price: "3000"
+        price: ["280", "1099", "1699", "2699", "N/A"]
     },
     {
         id:7,
@@ -53,7 +54,7 @@ const AllVehicles = [
         name:"Kia Sonet",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://www.kia.com/content/dam/kia2/in/en/images/our-vehicles/sonet/sonet_gallery/exterior/sonet_gallery_2.jpg",
-        price: "2500"
+        price: ["280", "1099", "1699", "2799", "50000"]
     },
     {
         id:8,
@@ -93,7 +94,7 @@ const AllVehicles = [
         name:"Maruti Suzuki Ciaz",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://i.pinimg.com/564x/8e/22/4c/8e224c0fe4a5e50740a5cab30b76116e.jpg",
-        price: "2500"
+        price: ["280", "1199", "1699", "2599", "N/A"]
     },
     {
         id:13,
@@ -101,7 +102,7 @@ const AllVehicles = [
         name:"Hyundai i20",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/i20-n-line/Gallery/Hyundai-i20Nline-Gallery-Mid-PC-1120x600-3.jpg",
-        price: "2500"
+        price: ["250", "899", "1599", "2499", "N/A"]
     },
     {
         id:14,
@@ -109,7 +110,7 @@ const AllVehicles = [
         name:"Nissan Magnite",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://imgd.aeplcdn.com//642x361//n/cw/ec/53833/front-view8.jpeg?wm=1&q=75",
-        price: "2500"
+        price: ["250", "999", "1699", "2599", "55000"]
     },
     {
         id:15,
@@ -117,7 +118,7 @@ const AllVehicles = [
         name:"Renault Kiger",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://images.alphacoders.com/117/1172861.jpg",
-        price: "2500"
+        price: ["250", "899", "1599", "2499", "N/A"]
     },
     {
         id:16,
@@ -125,7 +126,7 @@ const AllVehicles = [
         name:"Mahindra Thar",
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/40087/thar-exterior-right-front-three-quarter-32.jpeg?q=80",
-        price: ["300", "1,500", "2,500", "4,100", "12,000", "90,000"]
+        price: ["N/A", "1699", "2299", "4099", "N/A"]
     },
     {
         id:17,
