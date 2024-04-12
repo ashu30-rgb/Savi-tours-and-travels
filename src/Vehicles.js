@@ -4,7 +4,7 @@ const AllVehicles = [
         category:"bike, all",
         name:"Yamaha r15",
         description:"This is yamaha r15 bike very good bike this is",
-        imageUrl:"https://shop.yamaha-motor-india.com/cdn/shop/files/Racing-Blue_761x.webp?v=1704789964",
+        imageUrl:"https://imgd.aeplcdn.com/664x374/n/cw/ec/103795/yzf-r15-right-front-three-quarter-12.jpeg?isig=0&q=80",
         price: ["199", "799", "999", "1499", "35000"]
     },
     {
@@ -143,6 +143,54 @@ const AllVehicles = [
         description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
         imageUrl:"https://imgd.aeplcdn.com/1200x900/cw/ec/38355/Ford-Endeavour-Facelift-Exterior-148246.jpg?wm=0",
         price: "4500"
+    },
+    {
+        id:19,
+        category:"bike, all",
+        name:"Royal Enfield Bullet",
+        description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
+        imageUrl:"https://imgd.aeplcdn.com/1280x720/n/cw/ec/127499/bullet-right-front-three-quarter-3.jpeg?isig=0",
+        price: ["199", "799", "999", "1499", "N/A"]
+    },
+    {
+        id:20,
+        category:"bike, all",
+        name:"Honda Activa",
+        description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
+        imageUrl:"https://imgd.aeplcdn.com/1280x720/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg",
+        price: ["149", "499", "679", "799", "12000"]
+    },
+    {
+        id:21,
+        category:"7seater, all",
+        name:"Maruti Suzuki XL6",
+        description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
+        imageUrl:"https://images.firstpost.com/wp-content/uploads/2019/09/nexaxl61280.jpg?im=FitAndFill=(596,336)",
+        price: ["349", "1399", "1999", "3199", "N/A"]
+    },
+    {
+        id:22,
+        category:"5seater, all",
+        name:"suzuki Ignis",
+        description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
+        imageUrl:"https://imgd.aeplcdn.com/664x374/cw/ec/38611/Maruti-Suzuki-Ignis-Right-Front-Three-Quarter-149591.jpg?wm=0&q=80",
+        price: ["250", "899", "1599", "2499", "N/A"]
+    },
+    {
+        id:23,
+        category:"bike, all",
+        name:"TVS Jupiter",
+        description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
+        imageUrl:"https://imgd.aeplcdn.com/664x374/n/cw/ec/46749/jupiter-right-front-three-quarter.jpeg?q=80",
+        price: ["149", "499", "679", "799", "12000"]
+    },
+    {
+        id:24,
+        category:"bike, all",
+        name:"Royal Enfield Hunter",
+        description:["Petrol engine", "5 - Gear Manual Transmisison", "Fastag Available", "Door-step Delivery", "Built-in Stereo Speaker", "5 seater (comfortable for long trips with 5 peoples)", "Easy Booking option", "Security Features like Gps Tracking and Speed Limiter Installed"],
+        imageUrl:"https://www.advrider.com/wp-content/uploads/2023/04/042523-Royal-Enfield-Hunter-350-A4_04857-scaled.jpg",
+        price: ["199", "799", "999", "1499", "35000"]
     },
 ]
 
