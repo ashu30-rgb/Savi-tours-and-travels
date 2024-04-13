@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import logo from "../assets/SaviLogo.png";
+import logo from "../assets/logo.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import useBreakpoint from "../Hooks/breakpoint";
 let Header = ({ parentfn }) => {
@@ -71,7 +71,7 @@ let Header = ({ parentfn }) => {
             <img
               src={logo}
               alt="Relaxora-title"
-              className="w-52"
+              className="w-20"
             />
             
           </NavLink>
@@ -281,7 +281,7 @@ let Header = ({ parentfn }) => {
                 className={`line top ${
                   color === "text-white" && pathname === "/" && !isMobile
                     ? "line-white"
-                    : "line-black"
+                    : "line-white"
                 } `}
               ></path>
 
@@ -290,7 +290,7 @@ let Header = ({ parentfn }) => {
                 className={`line middle ${
                   color === "text-white" && pathname === "/" && !isMobile
                     ? "line-white"
-                    : "line-black"
+                    : "line-white"
                 } `}
               ></path>
 
@@ -299,7 +299,7 @@ let Header = ({ parentfn }) => {
                 className={`line bottom ${
                   color === "text-white" && pathname === "/" && !isMobile
                     ? "line-white"
-                    : "line-black"
+                    : "line-white"
                 } `}
               ></path>
             </svg>
@@ -333,7 +333,7 @@ let Header = ({ parentfn }) => {
                   }));
                 }}
                 className={` relative ${
-                  pathname === "/services" ? "!text-red-500" : "text-white"
+                  pathname === "/services" ? "!text-red-500" : "text-black"
                 } hover:!text-red-500 cursor-pointer  `}
               >
                 Services
@@ -414,7 +414,7 @@ let Header = ({ parentfn }) => {
                   <button
                     className={` ${
                       color === "text-white" && pathname === "/"
-                        ? "bg-white text-black hover:bg-white/80"
+                        ? "bg-red-500 text-black hover:bg-white/80"
                         : "bg-red-500 text-white hover:bg-black/60"
                     }uppercase px-5 py-1.5 w-full  rounded-lg`}
                   >

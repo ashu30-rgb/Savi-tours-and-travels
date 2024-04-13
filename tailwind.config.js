@@ -13,7 +13,12 @@ export default {
       square: 'square',
       roman: 'lower-roman',
       alpha: 'lower-alpha'
-    }
+    },
+    screens: {
+      'sm': '576px',
+      'md': '960px',
+      'lg': '1440px',
+    },
   },
   plugins: [],
 }

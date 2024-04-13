@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/SaviLogo.png";
+import logo from "../assets/logo.png";
 import { Link } from 'react-router-dom';
 
 
@@ -8,7 +8,7 @@ function Footer() {
     <footer className="text-gray-100 bg-black body-font">
   <div className="container px-5 mx-auto flex items-center sm:flex-row flex-col">
     <Link  className="flex shrink-0 py-2 items-center gap-1 lg:gap-2" to="/">
-      <img src={logo} alt="Relaxora-title" className="w-52"/>       
+      <img src={logo} alt="Relaxora-title" className="w-20"/>       
     </Link>
     <p className="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Savi Rentals —
       <a href="https://twitter.com/knyttneve" className="text-gray-100 ml-1" rel="noopener noreferrer" target="_blank">@savitoursandtravels</a>
