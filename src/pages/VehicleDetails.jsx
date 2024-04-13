@@ -54,11 +54,11 @@ function VehicleDetails() {
                   </div>
         <div className="flex items-center pb-5 border-b-2 border-gray-100 mb-4">
         </div>
-        <div className="flex">
-          <span className="title-font font-medium text-2xl text-gray-900"><b>&#8377;{data.price[duration[0]]}</b> / {duration[1]}</span>
-          <div className='ml-auto flex gap-2 font-semibold'>
-            <Link to={`/services/${data.category.split(",")[0]}`} className="flex text-black bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded">Go Back</Link>
-            <Link to="/bookNow" className="flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Book Now</Link>
+        <div className="flex flex-wrap gap-2 justify-around md:justify-between">
+          <span className="title-font font-medium text-2xl text-gray-900 "><b>&#8377;{data.price[duration[0]]}</b> / {duration[1]}</span>
+          <div className=' flex gap-2 font-semibold'>
+            <Link to={`/services/${data.category.split(",")[0]}`} className="flex text-black bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-sm md:text-lg shadow-lg">Go Back</Link>
+            <Link to="/bookNow" className="flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-sm md:text-lg shadow-lg">Book Now</Link>
           </div>
         </div>
       </div>

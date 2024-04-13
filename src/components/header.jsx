@@ -71,11 +71,11 @@ let Header = ({ parentfn }) => {
             <img
               src={logo}
               alt="Relaxora-title"
-              className="w-20"
+              className="w-36"
             />
             
           </NavLink>
-          <div className="hidden  py-2 xl:flex">
+          <div className="hidden  py-2 md:flex">
             <div className="flex items-center justify-center w-full">
               <ul className="flex  gap-6 xl:gap-10 font-bold text-white uppercase items-center  whitespace-nowrap sm:text-xs   xl:text-md">
                 
@@ -262,7 +262,7 @@ let Header = ({ parentfn }) => {
           </div>
 
           {/* hamburger-icon */}
-          <div className=" xl:hidden   relative z-10 flex justify-center items-center  ">
+          <div className=" md:hidden   relative z-10 flex justify-center items-center  ">
             <svg
               onClick={() => {
                 setListToggle((obj) => ({
@@ -307,7 +307,7 @@ let Header = ({ parentfn }) => {
           {/* hamburger-icon */}
           {/* hamBurger-list-items */}
           <div
-            className={` w-full absolute xl:hidden left-0  top-16 transition-all duration-700 bg-[#f0f2ef] border px-8 py-5  border-white/60 shadow-lg -z-10 ${
+            className={` w-full absolute md:hidden left-0  top-16 transition-all duration-700 bg-[#f0f2ef] border px-8 py-5  border-white/60 shadow-lg -z-10 ${
               listToggle.hamBurger ? " translate-y-0 " : " -translate-y-80 "
             } `}
           >
