@@ -213,3 +213,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.789) 0%, rgba(0, 0, 0, 0.427)
 .tally-powered>div{
   display: none !important;
 }
+
+.accordion__button:before{
+  transition-duration: 500ms !important;
+}
