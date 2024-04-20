@@ -75,7 +75,7 @@ function Faqs() {
                 <AccordionItemPanel>
                   <p>
                     Yes, there are typically age restrictions for renting a
-                    vehicle. Generally, renters must be at least 21 years old,
+                    vehicle. Generally, renters must be at least 18 years old,
                     although this may vary depending on the location and type of
                     vehicle. Additionally, young driver surcharges may apply to
                     renters under a certain age. Please check our terms and
