@@ -38,7 +38,7 @@ function VehicleDetails() {
                         <option value="1">6 Hrs</option>
                         <option value="2">12 Hrs</option>
                         <option value="3">24 Hrs</option>
-                        <option value="4">Month</option>
+                        <option value="4">Monthly</option>
                       </select>
                       <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                         <svg

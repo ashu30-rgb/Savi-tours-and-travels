@@ -21,7 +21,7 @@ function Services() {
     return (
     <>
         <div className='container text-center py-6 mx-auto'>
-            <div className='text-4xl font-semibold tracking-wide'>Vehicle rental tariffs in Law Gate</div>
+            <div className='text-4xl font-semibold tracking-wide'>Vehicle rental tariffs in law gate</div>
             <div>*All prices are exclusive of taxes and fuel. Images used for representation purposes only, actual color may vary</div>
         </div>
         {/* Toggle */}
