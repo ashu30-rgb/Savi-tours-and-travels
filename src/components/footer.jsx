@@ -8,7 +8,7 @@ function Footer() {
     <footer className="text-gray-100 bg-black body-font">
   <div className="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
     <Link  className="flex shrink-0 py-2 items-center gap-1 lg:gap-2" to="/">
-      <img src={logosmall} alt="Relaxora-title" className="w-12"/>       
+      <img src={logosmall} alt="Logo" className="w-12"/>       
     </Link>
     <p className="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Xplore Stays and Wheels —
       <a href="https://twitter.com/knyttneve" className="text-gray-100 ml-1" rel="noopener noreferrer" target="_blank">@xplorerentals</a>

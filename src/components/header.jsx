@@ -70,7 +70,7 @@ let Header = ({ parentfn }) => {
           >
             <img
               src={logo}
-              alt="Relaxora-title"
+              alt="Xplore rentals logo"
               className="w-36"
             />
             

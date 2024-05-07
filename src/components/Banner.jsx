@@ -73,7 +73,7 @@ function Banner() {
       <ul className="splide__list">
         {AllFeatures.map((feature, id)=>{return(
         <li key={id} className="splide__slide flex justify-center items-center gap-2 py-6 lg:py-8">
-          <img src={tik}  width="20"/>
+          <img src={tik}  width="20" alt='Green tik'/>
           <span className='text-lg whitespace-nowrap'>{feature}</span>
         </li>
         )})}
